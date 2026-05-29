@@ -42,6 +42,9 @@ export default function Navbar() {
               className="h-14 w-auto object-contain"
               style={{ mixBlendMode: 'multiply' }}
             />
+            <span className="font-display font-bold text-gray-900 text-lg leading-tight hidden sm:block">
+              Garage<br />Concorde
+            </span>
           </Link>
 
           {/* Desktop nav */}
