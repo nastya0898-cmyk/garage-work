@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Recurse \"c:\\\\Users\\\\khoni\\\\Downloads\\\\garage work\")",
+      "Bash(Select-Object FullName)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(powershell -Command \"\\(Get-Content src/pages/About.jsx\\) -replace 'pt-36', 'pt-44' | Set-Content src/pages/About.jsx; \\(Get-Content src/pages/Contact.jsx\\) -replace 'pt-36', 'pt-44' | Set-Content src/pages/Contact.jsx; \\(Get-Content src/pages/Gallery.jsx\\) -replace 'pt-36', 'pt-44' | Set-Content src/pages/Gallery.jsx; \\(Get-Content src/pages/Services.jsx\\) -replace 'pt-36', 'pt-44' | Set-Content src/pages/Services.jsx\")",
+      "Bash(powershell -Command \"\\(Get-Content src/pages/About.jsx\\) -replace 'pt-44', 'pt-36' | Set-Content src/pages/About.jsx; \\(Get-Content src/pages/Contact.jsx\\) -replace 'pt-44', 'pt-36' | Set-Content src/pages/Contact.jsx; \\(Get-Content src/pages/Gallery.jsx\\) -replace 'pt-44', 'pt-36' | Set-Content src/pages/Gallery.jsx; \\(Get-Content src/pages/Services.jsx\\) -replace 'pt-44', 'pt-36' | Set-Content src/pages/Services.jsx\")",
+      "Bash(findstr -i \"head\")",
+      "Bash(powershell -Command \"\\(Get-Content src/pages/Services.jsx\\) -replace '#F76A0C', '#d4a62f' | Set-Content src/pages/Services.jsx\")",
+      "Bash(ls \"c:\\\\Users\\\\khoni\\\\Downloads\\\\garage work\\\\public\\\\services\" 2>nul || echo \"FOLDER_NOT_FOUND\")",
+      "Bash(cp \"Réparation et entretien mécanique.jpg\" \"mecanique.jpg\")",
+      "Bash(cp \"Achat & Vente de véhicules d'occasion.jpg\" \"achat-vente.jpg\")",
+      "Bash(cp \"Services spécialisés.jpg\" \"services-specialises.jpg\")",
+      "Bash(cp \"Préparation d'expertise.jpg\" \"expertise.jpg\")",
+      "Bash(cp \"Carrosserie.jpg\" \"carrosserie.jpg\")",
+      "Bash(cp \"Covering.jpg\" \"svc-covering.jpg\")",
+      "Bash(cp \"Carrosserie.jpg\" \"svc-carrosserie.jpg\")",
+      "Bash(cp \"Location de voiture.jpg\" \"svc-location.jpg\")",
+      "Bash(cp \"Montage écran et caméra de recul.jpg\" \"svc-camera.jpg\")"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\khoni\\Downloads\\garage work"
+    ]
+  }
+}
