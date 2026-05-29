@@ -63,28 +63,41 @@ export default function WhyUs() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
             </div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0, rotate: -10 }}
-              whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.5, type: 'spring', stiffness: 200 }}
-              className="absolute -bottom-5 -right-5 bg-primary-500 text-white p-5 rounded-2xl shadow-2xl shadow-primary-500/30"
-            >
-              <p className="font-display text-4xl font-black leading-none">20+</p>
-              <p className="text-sm font-semibold mt-1">Ans d'expertise</p>
-            </motion.div>
 
-            {/* Partner logos */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.6 }}
-              className="flex items-center gap-8 mt-14"
-            >
-              <img src="/lease force.png" alt="Lease Force" className="h-16 object-contain" />
-              <img src="/quality one garantie.png" alt="Quality One Garantie" className="h-16 object-contain" />
-            </motion.div>
+            {/* Partners + badge in one aligned row */}
+            <div className="flex items-end justify-between mt-6">
+
+              {/* Partner logos */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.6 }}
+              >
+                <p className="text-[10px] text-gray-400 font-semibold uppercase tracking-widest mb-2">
+                  Partenaires
+                </p>
+                <div className="flex items-center gap-6" style={{ height: 48 }}>
+                  <img src="/lease force.png" alt="Lease Force"
+                       className="max-h-full w-auto object-contain object-bottom" />
+                  <img src="/quality one garantie.png" alt="Quality One Garantie"
+                       className="max-h-full w-auto object-contain object-bottom" />
+                </div>
+              </motion.div>
+
+              {/* 20+ badge */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0, rotate: -10 }}
+                whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.5, type: 'spring', stiffness: 200 }}
+                className="bg-primary-500 text-white p-5 rounded-2xl shadow-2xl shadow-primary-500/30 shrink-0"
+              >
+                <p className="font-display text-4xl font-black leading-none">20+</p>
+                <p className="text-sm font-semibold mt-1">Ans d'expertise</p>
+              </motion.div>
+
+            </div>
           </motion.div>
 
           {/* Text + advantages */}
